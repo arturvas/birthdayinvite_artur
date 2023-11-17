@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniversário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/main.scss" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container">
+        <img class="hero__logo" src="./images/favicon.svg" alt="Logo" />
+        <p class="hero__text">
+          Meu aniversário<span id="comecou"></span>
+          <span id="contador"></span>
+        </p>
+        <div class="infos-bar">
+          <ul class="infos-bar__infos">
+            <li class="infos-bar__infos__item">
+              <b>Localização</b>
+              Rua Macunaima - Bairro 13 de Setembro - Boa Vista/RR
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Preço</b>
+              A sua companhia
+            </li>
+            <li class="infos-bar__infos__item">
+              <b>Quando</b>
+              19/09/2024 às 19h
+            </li>
+          </ul>
+          <a href="#" class="button button--primary">Confirmar presença</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="event event--curiosidades">
+      <div class="container" data-aos="flip-up">
+        <div class="event__header">
+          <h1 class="event__header__title">Curiosidades sobre mim</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="event event--programacao">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__details__title">Adoro programação</h2>
+          <p class="event__details__description">
+            Sou apaixonado por programação e codificação. Adoro transformar
+            ideias em realidade por meio de linhas de código, explorando
+            diferentes linguagens e desafios de desenvolvimento.
+          </p>
+        </div>
+        <div class="event__container">
+          <img
+            class="event__container__image"
+            src="./images/coding.jpg"
+            alt="programador"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="event event--f1 event--image-left">
+      <div class="container" data-aos="fade-left">
+        <div class="event__details">
+          <h2 class="event__details__title">Fórmula 1</h2>
+          <p class="event__details__description">
+            Sou fascinado pela emoção das corridas, estratégias de equipe e
+            inovações tecnológicas. Além disso, meu amor pelas corridas se
+            estende ao kart, onde posso experimentar a adrenalina do asfalto
+            pessoalmente. Meu time favorito é Ferrari com o Leclerc, mas também
+            tenho um carinho enorme pela McLaren com Lando Norris.
+          </p>
+        </div>
+        <div class="event__container">
+          <img
+            class="event__container__image"
+            src="./images/kart.jpg"
+            alt="f1"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="event event--filosofia">
+      <div class="container" data-aos="fade-right">
+        <div class="event__details">
+          <h2 class="event__details__title">Filosofia</h2>
+          <p class="event__details__description">
+            A filosofia aristotélica exerce um fascínio profundo sobre mim.
+            Explorar os ensinamentos de Aristóteles, sua ética, metafísica e
+            teoria política, proporciona uma compreensão rica e significativa do
+            mundo ao nosso redor. A busca pelo equilíbrio e pela excelência
+            molda minha perspectiva de vida.
+          </p>
+        </div>
+        <div class="event__container__image">
+          <img
+            class="event__container__image"
+            src="./images/filosofia.jpg"
+            alt="Filosofia"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="event event--arte event--image-left">
+      <div class="container" data-aos="fade-left">
+        <div class="event__details">
+          <h2 class="event__details__title">Arte clássica</h2>
+          <p class="event__details__description">
+            A pintura barroca é uma fonte de inspiração constante para mim. A
+            profundidade emocional, a riqueza de detalhes e as composições
+            dramáticas cativam meu olhar. Admiro artistas como Caravaggio e
+            Rembrandt, cujas obras transcendem o tempo, proporcionando uma
+            experiência estética única.
+          </p>
+        </div>
+        <div class="event__container">
+          <img
+            class="event__container__image"
+            src="./images/arte.jpg"
+            alt="Filósofo meditando"
+          />
+        </div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="./scripts/main.js"></script>
+  </body>
+</html>

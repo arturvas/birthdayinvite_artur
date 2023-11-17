@@ -1,0 +1,89 @@
+@use "variables" as *;
+
+.event {
+  padding: 80px 0;
+  color: $secondaryTextColor;
+
+  &--curiosidades {
+    background-image: linear-gradient($color1, $color2);
+    padding: 60px 40px 0;
+  }
+
+  &--programacao {
+    background-image: linear-gradient($color2, $color3);
+  }
+
+  &--f1 {
+    background-image: linear-gradient($color3, $color4);
+  }
+
+  &--filosofia {
+    background-image: linear-gradient($color4, $color5);
+  }
+
+  &--arte {
+    background-image: linear-gradient($color5, $color6);
+  }
+
+  &--image-left {
+    .container {
+      flex-direction: row-reverse;
+    }
+  }
+
+  .container {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__container {
+    &__image {
+      width: 360px;
+      height: 240px;
+      object-fit: cover;
+    }
+  }
+
+  &__image {
+    max-width: 360px;
+  }
+
+  &__header {
+    text-align: center;
+    width: 100%;
+
+    &__title {
+      font-size: 32px;
+      font-weight: bold;
+    }
+  }
+
+  &__details {
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+
+    &__description {
+      line-height: 22px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    &__image {
+      width: 100%;
+    }
+
+    &__details {
+      margin-right: 0;
+      margin-bottom: 16px;
+    }
+  }
+}
